@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">LearnHub</h1>
+      <ul class="nav-links">
+        <li><a href="#videos">Lessons</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#progress">Progress</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to LearnHub</h2>
+    <p>Learn at your own pace with video lessons and interactive quizzes.</p>
+  </section>
+
+  <!-- Video Lessons Section -->
+  <section id="videos" class="content-section">
+    <h2>Video Lessons</h2>
+    <video width="640" height="360" controls>
+      <source src="lesson1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>Lesson 1: Introduction to HTML</p>
+  </section>
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="content-section">
+    <h2>Quick Quiz</h2>
+    <form id="quiz-form">
+      <p>1. What does HTML stand for?</p>
+      <input type="radio" name="q1" value="a"> a) HyperText Makeup Language<br>
+      <input type="radio" name="q1" value="b"> b) HyperText Markup Language<br>
+      <input type="radio" name="q1" value="c"> c) Hyperlink and Text Mark Language<br>
+
+      <p>2. Which tag is used for creating a hyperlink?</p>
+      <input type="radio" name="q2" value="a"> a) &lt;link&gt;<br>
+      <input type="radio" name="q2" value="b"> b) &lt;href&gt;<br>
+      <input type="radio" name="q2" value="c"> c) &lt;a&gt;<br>
+
+      <button type="submit">Submit Quiz</button>
+    </form>
+    <div id="quiz-result"></div>
+  </section>
+
+  <!-- Progress Tracking Section -->
+  <section id="progress" class="content-section">
+    <h2>Your Progress</h2>
+    <p>Lessons Completed: <span id="lessons-completed">0</span>/10</p>
+    <p>Quiz Score: <span id="quiz-score">0</span>%</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LearnHub. All rights reserved.</p>
+  </footer>
+<script src="main.js"></script>
+</body>
+</html>
